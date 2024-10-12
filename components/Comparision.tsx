@@ -109,7 +109,7 @@ const data = [
 ];
 
 function getRandomColor (){
-  let color = `hsl(${Math.random() * 360}, 100%, 85%)`
+  const color = `hsl(${Math.random() * 360}, 100%, 85%)`
   return color
 }
 
@@ -143,7 +143,7 @@ const list = {
 
   const draw = {
     hidden: { pathLength: 0, opacity: 0,translateX:100, },
-    visible: (i:any) => {
+    visible: (i: number) => {
       const delay = 1 + i * 5;
       console.log(delay, i)
       return {
